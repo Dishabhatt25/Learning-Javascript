@@ -256,10 +256,15 @@ for (let i = 1; i <= 5; i++) {
 // console.log("given number= ", num);
 
 //print all even number
+// for(let i=0;i<=100; i++)
+//   if(i%2==0) {
+  
+//   console.log("i = ",i); 
+// }
+
+//print all odd number 
 for(let i=0;i<=100; i++)
-  if(i%2==0) {
+  if(i%2!==0) {
   
   console.log("i = ",i); 
 }
-
-
