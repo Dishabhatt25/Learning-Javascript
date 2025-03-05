@@ -294,39 +294,105 @@
 // };
 
 
-let str = "Bhoomika";
-let size = 0;
-for (let i of str) {
-  console.log("i = ", i)
-  size++;
-}
-console.log("size of string = ", size);
+// let str = "Bhoomika";
+// let size = 0;
+// for (let i of str) {
+//   console.log("i = ", i)
+//   size++;
+// }
+// console.log("size of string = ", size);
 
 
-//for-in loop
-let student = {
-  name: "Disha Bhatt",
-  age: 20,
-  cgpa: 7.8,
-  ispass: true,
-};
-for (let key in student) {
-  console.log("key = ", key, "value = ", student[key]);
-};
+// //for-in loop
+// let student = {
+//   name: "Disha Bhatt",
+//   age: 20,
+//   cgpa: 7.8,
+//   ispass: true,
+// };
+// for (let key in student) {
+//   console.log("key = ", key, "value = ", student[key]);
+// };
 
 
-//Practice Question
-for (let i = 1; i <= 100; i++) {
-  if (i % 2 === 0)
-    console.log("i = ", i)
-};
+// //Practice Question
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 === 0)
+//     console.log("i = ", i)
+// };
 
-//Game
-let gamenum = 25;
-let usernum = prompt("Guess the game number");
-while (usernum != gamenum) {
-  usernum = prompt("You entered the wrong number.Guess again")
-} 
-console.log("Congratulations!");
+// //Game
+// let gamenum = 25;
+// let usernum = prompt("Guess the game number");
+// while (usernum != gamenum) {
+//   usernum = prompt("You entered the wrong number.Guess again")
+// } 
+// console.log("Congratulations!");
 
  
+ //STRING
+ let str = "Disha Bhatt";
+ let str2 ='Bhoomika Bhatt'
+  console.log(str.length);//Used for string length
+ console.log(str[1]);//Used for individual position of character
+
+ //Use of ecsape characters
+ let str3 ="Disha\tBhatt";
+ console.log(str3.length);
+ console.log("Disha\nBhatt");
+console.log("Disha\tBhatt");
+
+
+//Template literals in string
+let obj ={
+  item : "pen",
+  price : 10,
+};
+//console.log("the  price of  ",obj.item, "is = ",obj.price);//old method
+//Output using template literal
+//let output =`the cost of ${obj.item} is ${obj.price} rupees`; 
+console.log(`the cost of ${obj.item} is ${obj.price} rupees`);
+
+
+//String methods
+//Upper Case
+   let str4 = "DishaBhatt";
+   let newstr = str.toUpperCase();
+   console.log(str);
+   console.log(newstr);
+
+
+//Lower Case
+let str5 = "DISHABHATT";
+str = str.toLowerCase();
+console.log(str);
+
+//Trim Case
+let str6 = "   Disha  Bhatt   ";
+console.log(str6.trim());
+
+
+//Slice Case
+let str7 ="DishaBhatt";
+console.log(str7.slice(0,2));
+
+//Concat Case
+let Str1 = "Disha";
+let Str2 ="Bhatt";
+let res = Str1.concat(Str2);
+console.log(res);
+
+//Replace Case
+let Str = "Hello";
+console.log(Str.replace("H", "y"));
+
+
+//Character At Case
+let StR ="IloveJS";
+console.log(StR.charAt(0));
+
+
+//Practice question
+let Name1 = prompt("Enter your Name Without spaces: ");
+let username = "@" + Name1 + Name1.length;
+console.log(username);
