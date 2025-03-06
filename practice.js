@@ -331,68 +331,102 @@
 
  
  //STRING
- let str = "Disha Bhatt";
- let str2 ='Bhoomika Bhatt'
-  console.log(str.length);//Used for string length
- console.log(str[1]);//Used for individual position of character
+//  let str = "Disha Bhatt";
+//  let str2 ='Bhoomika Bhatt'
+//   console.log(str.length);//Used for string length
+//  console.log(str[1]);//Used for individual position of character
 
- //Use of ecsape characters
- let str3 ="Disha\tBhatt";
- console.log(str3.length);
- console.log("Disha\nBhatt");
-console.log("Disha\tBhatt");
+//  //Use of ecsape characters
+//  let str3 ="Disha\tBhatt";
+//  console.log(str3.length);
+//  console.log("Disha\nBhatt");
+// console.log("Disha\tBhatt");
 
 
-//Template literals in string
-let obj ={
-  item : "pen",
-  price : 10,
-};
-//console.log("the  price of  ",obj.item, "is = ",obj.price);//old method
-//Output using template literal
+// //Template literals in string
+// let obj ={
+//   item : "pen",
+//   price : 10,
+// };
+// //console.log("the  price of  ",obj.item, "is = ",obj.price);//old method
+// //Output using template literal
 //let output =`the cost of ${obj.item} is ${obj.price} rupees`; 
-console.log(`the cost of ${obj.item} is ${obj.price} rupees`);
+//console.log(`the cost of ${obj.item} is ${obj.price} rupees`);
 
 
 //String methods
 //Upper Case
-   let str4 = "DishaBhatt";
-   let newstr = str.toUpperCase();
-   console.log(str);
-   console.log(newstr);
+//    let str4 = "DishaBhatt";
+//    let newstr = str.toUpperCase();
+//    console.log(str);
+//    console.log(newstr);
 
 
-//Lower Case
-let str5 = "DISHABHATT";
-str = str.toLowerCase();
-console.log(str);
+// //Lower Case
+// let str5 = "DISHABHATT";
+// str = str.toLowerCase();
+// console.log(str);
 
 //Trim Case
-let str6 = "   Disha  Bhatt   ";
-console.log(str6.trim());
+// let str6 = "   Disha  Bhatt   ";
+// console.log(str6.trim());
 
 
-//Slice Case
-let str7 ="DishaBhatt";
-console.log(str7.slice(0,2));
+// //Slice Case
+// let str7 ="DishaBhatt";
+// console.log(str7.slice(0,2));
 
 //Concat Case
-let Str1 = "Disha";
-let Str2 ="Bhatt";
-let res = Str1.concat(Str2);
-console.log(res);
+// let Str1 = "Disha";
+// let Str2 ="Bhatt";
+// let res = Str1.concat(Str2);
+// console.log(res);
 
-//Replace Case
-let Str = "Hello";
-console.log(Str.replace("H", "y"));
+// //Replace Case
+// let Str = "Hello";
+// console.log(Str.replace("H", "y"));
 
 
-//Character At Case
-let StR ="IloveJS";
-console.log(StR.charAt(0));
+// //Character At Case
+// let StR ="IloveJS";
+// console.log(StR.charAt(0));
 
 
 //Practice question
-let Name1 = prompt("Enter your Name Without spaces: ");
-let username = "@" + Name1 + Name1.length;
-console.log(username);
+// let Name1 = prompt("Enter your Name Without spaces: ");
+// let username = "@" + Name1 + Name1.length;
+// console.log(username);
+
+//ARRAYS IN JS
+let marks =[25,67,45,70, 67,80, 89];
+console.log(marks);
+console.log(marks.length);//Property
+console.log (marks[0]);
+marks[5] = 56;
+console.log(marks);
+ 
+//Looping concept in array
+let heroes =["ironman", "thor","hulk","shaktiman","spiderman",];
+//for(let idx =0; idx< heroes.length;idx++){
+  //  console.log(heroes[idx])
+//};
+
+
+//for of loop in array 
+for(let hero of heroes){
+    console.log(hero);
+}
+
+let cities = ["delhi","mumbai","ahmdabaad","gurgaon","banaras"];
+for(let city of cities ){
+    console.log(city.toUpperCase());
+}
+
+//Practice Question
+let Marks =[85,97,44,37,76,60];
+let sum =0;
+for(let val of Marks){
+    sum+=val;
+}
+let avg = sum/Marks.length;
+console.log(`the average marks of class =${avg}`);
