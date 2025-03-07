@@ -329,8 +329,8 @@
 // } 
 // console.log("Congratulations!");
 
- 
- //STRING
+
+//STRING
 //  let str = "Disha Bhatt";
 //  let str2 ='Bhoomika Bhatt'
 //   console.log(str.length);//Used for string length
@@ -398,35 +398,101 @@
 // console.log(username);
 
 //ARRAYS IN JS
-let marks =[25,67,45,70, 67,80, 89];
+let marks = [25, 67, 45, 70, 67, 80, 89];
 console.log(marks);
 console.log(marks.length);//Property
-console.log (marks[0]);
+console.log(marks[0]);
 marks[5] = 56;
 console.log(marks);
- 
+
 //Looping concept in array
-let heroes =["ironman", "thor","hulk","shaktiman","spiderman",];
+let heroes = ["ironman", "thor", "hulk", "shaktiman", "spiderman",];
 //for(let idx =0; idx< heroes.length;idx++){
-  //  console.log(heroes[idx])
+//  console.log(heroes[idx])
 //};
 
 
 //for of loop in array 
-for(let hero of heroes){
+for (let hero of heroes) {
     console.log(hero);
 }
 
-let cities = ["delhi","mumbai","ahmdabaad","gurgaon","banaras"];
-for(let city of cities ){
+let cities = ["delhi", "mumbai", "ahmdabaad", "gurgaon", "banaras"];
+for (let city of cities) {
     console.log(city.toUpperCase());
 }
 
 //Practice Question
-let Marks =[85,97,44,37,76,60];
-let sum =0;
-for(let val of Marks){
-    sum+=val;
+let Marks = [85, 97, 44, 37, 76, 60];
+let sum = 0;
+for (let val of Marks) {
+    sum += val;
 }
-let avg = sum/Marks.length;
+let avg = sum / Marks.length;
 console.log(`the average marks of class =${avg}`);
+
+//Practice question 2
+let item = [250, 645, 300, 900, 50];
+for (let i = 0; i < item.length; i++) {
+    let offer = item[i] / 10;
+    item[i] -= offer;
+}
+console.log(item);
+
+
+//Methods in array 
+let fooditems = ["potato","apple","lichi","tomato"];
+// fooditems.push("burger","chowmin");//to add element
+// console.log(fooditems);
+// fooditems.pop();//to delete element
+// console.log(fooditems);
+console.log(fooditems.toString());
+
+
+//Concat in array
+let list1 =[22,45,67,89];
+let list2 =[12,56,78,90];
+let list3 = list1.concat(list2);
+console.log(list3);
+
+//unshift
+let cartoon =["doremon","shinchen","pikachu"];
+cartoon.unshift("oggy");
+console.log(cartoon);
+
+
+//shift
+cartoon.shift();
+console.log(cartoon);
+
+//Slice
+console.log(cartoon.slice(1,3));
+
+//Splice
+let arr =[45,78,89,47];
+arr.splice(0,2,101,102);
+console.log(arr);
+
+//Add element using splice
+arr.splice(2,0,101);
+console.log(arr);
+
+//Delete element using splice
+arr.splice(0,1);
+console.log(arr);
+
+//Replace element using splice
+arr.splice(0,1,1000);
+console.log(arr);
+
+//Practice question based on arary methods
+let companies =["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+// companies.shift();
+// console.log(companies);
+// companies.splice(2,1,"Ola");
+// console.log(companies);
+companies.push("Amazon");
+console.log(companies);
+
+
+
