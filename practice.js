@@ -493,6 +493,65 @@ let companies =["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
 // console.log(companies);
 companies.push("Amazon");
 console.log(companies);
+companies.splice(1,3,"Zomato");
+console.log(companies);
+
+//Practice question(MDN)
+//let fruits =["apple","mango","banana","orange","papaya"];
+//Faalfruits.slice(3,4);
+//console.log(fruits(3,4));
+
+//Question 2
+//Create an array
+let cricketers = ["Virat","Dhoni","Shubhman","Sachin","Rohit"];
+cricketers.splice(2,1,"Rishabh","Iyer");
+console.log(cricketers);
+
+//Question 3
+let i = "Prabal";
+console.log(typeof i);
+
+//Question 4
+let j = "Disha \n";
+let k = "Bhoomi";
+res = j.concat(k);
+console.log("result = ",res);
+
+//Question 5
+let str = "     Hello world     ";
+console.log(str.trimStart());
+
+//Question 6
+let Str = "Bhoomika";
+console.log(Str.charAt(2,4));
+
+//Question 7
+let str1 ="Prabal yadav";
+// for(let i of str1){
+//     console.log(i)
+// };
+let Arr = str1.split("")
+console.log(Arr);
+
+//Question 8
+let name ="john";
+let lastName ="sharma";
+let fullName = `welcome ${name} ${lastName}`;
+console.log(fullName);
+
+//Question 9
+let num = 56;
+let num1 = 78;
+if(num>num1){
+    console.log("num is greater than num1")
+} else{
+    console.log("num1 is greater than num");
+};
+
+
+
+
+
 
 
 
