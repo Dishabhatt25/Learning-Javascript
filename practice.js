@@ -441,7 +441,7 @@ console.log(item);
 
 
 //Methods in array 
-let fooditems = ["potato","apple","lichi","tomato"];
+let fooditems = ["potato", "apple", "lichi", "tomato"];
 // fooditems.push("burger","chowmin");//to add element
 // console.log(fooditems);
 // fooditems.pop();//to delete element
@@ -450,13 +450,13 @@ console.log(fooditems.toString());
 
 
 //Concat in array
-let list1 =[22,45,67,89];
-let list2 =[12,56,78,90];
+let list1 = [22, 45, 67, 89];
+let list2 = [12, 56, 78, 90];
 let list3 = list1.concat(list2);
 console.log(list3);
 
 //unshift
-let cartoon =["doremon","shinchen","pikachu"];
+let cartoon = ["doremon", "shinchen", "pikachu"];
 cartoon.unshift("oggy");
 console.log(cartoon);
 
@@ -466,34 +466,34 @@ cartoon.shift();
 console.log(cartoon);
 
 //Slice
-console.log(cartoon.slice(1,3));
+console.log(cartoon.slice(1, 3));
 
 //Splice
-let arr =[45,78,89,47];
-arr.splice(0,2,101,102);
+let arr = [45, 78, 89, 47];
+arr.splice(0, 2, 101, 102);
 console.log(arr);
 
 //Add element using splice
-arr.splice(2,0,101);
+arr.splice(2, 0, 101);
 console.log(arr);
 
 //Delete element using splice
-arr.splice(0,1);
+arr.splice(0, 1);
 console.log(arr);
 
 //Replace element using splice
-arr.splice(0,1,1000);
+arr.splice(0, 1, 1000);
 console.log(arr);
 
 //Practice question based on arary methods
-let companies =["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
 // companies.shift();
 // console.log(companies);
 // companies.splice(2,1,"Ola");
 // console.log(companies);
 companies.push("Amazon");
 console.log(companies);
-companies.splice(1,3,"Zomato");
+companies.splice(1, 3, "Zomato");
 console.log(companies);
 
 //Practice question(MDN)
@@ -503,8 +503,8 @@ console.log(companies);
 
 //Question 2
 //Create an array
-let cricketers = ["Virat","Dhoni","Shubhman","Sachin","Rohit"];
-cricketers.splice(2,1,"Rishabh","Iyer");
+let cricketers = ["Virat", "Dhoni", "Shubhman", "Sachin", "Rohit"];
+cricketers.splice(2, 1, "Rishabh", "Iyer");
 console.log(cricketers);
 
 //Question 3
@@ -515,7 +515,7 @@ console.log(typeof i);
 let j = "Disha \n";
 let k = "Bhoomi";
 res = j.concat(k);
-console.log("result = ",res);
+console.log("result = ", res);
 
 //Question 5
 let str = "     Hello world     ";
@@ -523,10 +523,10 @@ console.log(str.trimStart());
 
 //Question 6
 let Str = "Bhoomika";
-console.log(Str.charAt(2,4));
+console.log(Str.charAt(2, 4));
 
 //Question 7
-let str1 ="Prabal yadav";
+let str1 = "Prabal yadav";
 // for(let i of str1){
 //     console.log(i)
 // };
@@ -534,22 +534,79 @@ let Arr = str1.split("")
 console.log(Arr);
 
 //Question 8
-let name ="john";
-let lastName ="sharma";
+let name = "john";
+let lastName = "sharma";
 let fullName = `welcome ${name} ${lastName}`;
 console.log(fullName);
 
 //Question 9
 let num = 56;
 let num1 = 78;
-if(num>num1){
+if (num > num1) {
     console.log("num is greater than num1")
-} else{
+} else {
     console.log("num1 is greater than num");
 };
 
 
 
+//Lecture 5 Function
+function myFunction() {
+    console.log("Welcome to apna clg");
+    console.log("We are learning javascript");
+}
+myFunction();
+myFunction();//for twice printing
+
+
+function myfunction(msg, j) {
+    console.log(msg, j);//parameter / input
+}
+myfunction("i love js", "java");//argument 
+
+
+//Function->2 numbers, sum
+function Sum(x, y) {
+    console.log(x + y);
+}
+Sum(9, 7);
+
+
+//When function returns a value
+function sum1(x, y) {  //sum variable will work as local variable
+    s = x + y;
+    return s;
+}
+let val = sum1(3, 4);
+console.log(val);
+
+
+//Sum function without arrow function 
+function sum2(a, b) {
+    return a + b;
+}
+
+//Using arrow fumction(Modern js)
+const arrowSum = (a, b) => {
+    console.log(a + b);
+}
+
+const arrowmul = (a, b) => {
+    console.log(a * b);
+}
+
+//Practice question
+function countvowels(str) {
+    let count = 0;
+    for (let char of str) {
+        if (char === "a" || char === "e" ||
+            char === "i" || char === "o" || char === "u"
+        ){
+            count++;
+        }
+    }
+    console.log(count);
+}
 
 
 
