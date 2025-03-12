@@ -582,11 +582,11 @@ console.log(val);
 
 
 //Sum function without arrow function 
-function sum2(a, b) {
+function sum1(a, b) {
     return a + b;
 }
 
-//Using arrow fumction(Modern js)
+//Using arrow function(Modern js)
 const arrowSum = (a, b) => {
     console.log(a + b);
 }
@@ -607,6 +607,61 @@ function countvowels(str) {
     }
     console.log(count);
 }
+
+
+//Modulus using function
+function s(x,y){
+return x%y 
+}
+let result = s(8,2);
+console.log(result);
+
+
+//Question 2
+function handleClick(a,b){
+    return {
+        a : 6,
+        b : 2
+    }
+}
+console.log(handleClick);
+
+
+//Question 3
+function add(x,y){
+    return add(3,6)
+}
+console.log(3+6);
+
+
+//Question 4
+function getUser(a,b){
+    return {
+        a : 6,
+        b : 2
+    }
+}
+console.log(getUser());
+
+
+//Question 5
+function greet(){
+    return "Hy its Disha";
+    console.log("i want this execution");
+}
+console.log(greet());
+
+
+//Question 6
+function User(){}{
+    console.log(User())
+};
+
+
+
+
+
+
 
 
 
