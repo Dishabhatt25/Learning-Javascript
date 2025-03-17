@@ -584,16 +584,23 @@ console.log(val);
 //Sum function without arrow function 
 function sum1(a, b) {
     return a + b;
-}
+};
+console.log(3,4); 
 
 //Using arrow function(Modern js)
 const arrowSum = (a, b) => {
     console.log(a + b);
-}
+};
+arrowSum(6,9);
 
 const arrowmul = (a, b) => {
     console.log(a * b);
 }
+
+const printHello =() =>{
+    console.log("Hello")
+};
+printHello();
 
 //Practice question
 function countvowels(str) {
@@ -606,64 +613,97 @@ function countvowels(str) {
         }
     }
     console.log(count);
-}
+};
+countvowels("Bhoomika");
 
+
+//Using arrow function 
+const countvow =(str)=>{
+    let count = 0;
+    for (let char of str) {
+        if (char === "a" || char === "e" ||
+            char === "i" || char === "o" || char === "u"
+        ){
+            count++;
+        }
+    }
+    console.log(count);
+};
+countvow("tajmahal");
 
 //Modulus using function
-function s(x,y){
-return x%y 
-}
-let result = s(8,2);
-console.log(result);
+// function s(x,y){
+// return x%y 
+// }
+// let result = s(8,2);
+// console.log(result);
 
 
-//Question 2
-function handleClick(a,b){
-    return {
-        a : 6,
-        b : 2
-    }
-}
-console.log(handleClick);
+// //Question 2
+// function handleClick(a,b){
+//     return {
+//         a : 6,
+//         b : 2
+//     }
+// }
+// console.log(handleClick);
 
 
-//Question 3
-function add(x,y){
-    return add(3,6)
-}
-console.log(3+6);
+// //Question 3
+// function add(x,y){
+//     return add(3,6)
+// }
+// console.log(3+6);
 
 
-//Question 4
-function getUser(a,b){
-    return {
-        a : 6,
-        b : 2
-    }
-}
-console.log(getUser());
+// //Question 4
+// function getUser(a,b){
+//     return {
+//         a : 6,
+//         b : 2
+//     }
+// }
+// console.log(getUser());
 
 
-//Question 5
-function greet(){
-    return "Hy its Disha";
-    console.log("i want this execution");
-}
-console.log(greet());
+// //Question 5
+// function greet(){
+//     return "Hy its Disha";
+//     console.log("i want this execution");
+// }
+// console.log(greet());
 
 
-//Question 6
-function User(){}{
-    console.log(User())
-};
+// //Question 6
+// function User(){}{
+//     console.log(User())
+// };
 
 
+// function sub(a,b){
+//     return a-b;
+// };
+// let S = sub(6,2);
+// console.log(S);
 
 
+let str6 ="disha";
+console.log(str6.toUpperCase());
 
+//foreach loop in array 
+let arr11 =[1,2,3,4,5];
+arr11.forEach(function printValue(val) {
+console.log(val);
+});
 
+//Example 2
+let arr12 = ["pune","delhi","mumbai"];
+arr12.forEach((val,idx,arr12)=>{
+    console.log(val.toUpperCase(),idx,arr12)
+});
 
-
-
-
-
+//Practice question
+let nums =[1,2,3,4,5,6,7,8];
+nums.forEach((num)=>{
+    console.log(num*num);
+});
