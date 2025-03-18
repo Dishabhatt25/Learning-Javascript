@@ -585,19 +585,19 @@ console.log(val);
 function sum1(a, b) {
     return a + b;
 };
-console.log(3,4); 
+console.log(3, 4);
 
 //Using arrow function(Modern js)
 const arrowSum = (a, b) => {
     console.log(a + b);
 };
-arrowSum(6,9);
+arrowSum(6, 9);
 
 const arrowmul = (a, b) => {
     console.log(a * b);
 }
 
-const printHello =() =>{
+const printHello = () => {
     console.log("Hello")
 };
 printHello();
@@ -608,7 +608,7 @@ function countvowels(str) {
     for (let char of str) {
         if (char === "a" || char === "e" ||
             char === "i" || char === "o" || char === "u"
-        ){
+        ) {
             count++;
         }
     }
@@ -618,12 +618,12 @@ countvowels("Bhoomika");
 
 
 //Using arrow function 
-const countvow =(str)=>{
+const countvow = (str) => {
     let count = 0;
     for (let char of str) {
         if (char === "a" || char === "e" ||
             char === "i" || char === "o" || char === "u"
-        ){
+        ) {
             count++;
         }
     }
@@ -687,23 +687,91 @@ countvow("tajmahal");
 // console.log(S);
 
 
-let str6 ="disha";
+let str6 = "disha";
 console.log(str6.toUpperCase());
 
 //foreach loop in array 
-let arr11 =[1,2,3,4,5];
+let arr11 = [1, 2, 3, 4, 5];
 arr11.forEach(function printValue(val) {
-console.log(val);
+    console.log(val);
 });
 
 //Example 2
-let arr12 = ["pune","delhi","mumbai"];
-arr12.forEach((val,idx,arr12)=>{
-    console.log(val.toUpperCase(),idx,arr12)
+let arr12 = ["pune", "delhi", "mumbai"];
+arr12.forEach((val, idx, arr12) => {
+    console.log(val.toUpperCase(), idx, arr12)
 });
 
 //Practice question
-let nums =[1,2,3,4,5,6,7,8];
-nums.forEach((num)=>{
-    console.log(num*num);
+// let nums =[1,2,3,4,5,6,7,8];
+// nums.forEach((num){
+//     console.log(num*num);
+// }) ;
+
+
+//Some more methods in array 
+//1.Map
+//Using map to print the value of array 
+let nums = [45, 89, 23];
+nums.map((val) => {
+    console.log(val)
 });
+
+
+//Using map method to make new array 
+let Nums = [45, 63, 57];
+let newArray = Nums.map((val) => {
+    return val * val;
+})
+console.log(Nums);
+console.log(newArray);
+
+
+//2.Filter
+let arr13 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let newArr = arr13.filter((val) => {
+    return val % 2 === 0;
+});
+console.log(newArr);
+
+
+//3.Reduce
+let arr14 = [1, 2, 3, 4, 5];
+const output = arr14.reduce((res, curr) => {
+    return res + curr;
+});
+console.log(output);
+
+
+let arr15 = [4, 2, 7, 3, 0];
+const Output = arr15.reduce((prev, curr) => {
+    return prev > curr ? prev : curr;
+})
+console.log(Output);
+
+
+//Practice question 1
+let mmarks = [94, 89, 56, 59, 99, 90];
+let newmarks = mmarks.filter((val) => {
+    return val > 90;
+});
+console.log(newmarks);
+
+
+//Practice question 2
+let n = prompt("Enter a number:");
+let Arr1 = [];
+for (i = 1; i <= n; i++) {
+    Arr1[i - 1] = i;
+}
+console.log(Arr1);
+
+let total = Arr1.reduce((prev, curr) => {
+    return prev + curr;
+})
+console.log("total = ",total);
+
+let product = Arr1.reduce((prev, curr) => {
+    return prev * curr;
+})
+console.log("product = ",product);
